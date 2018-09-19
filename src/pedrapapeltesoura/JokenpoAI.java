@@ -3,7 +3,7 @@ package pedrapapeltesoura;
 import javax.swing.JOptionPane;
 
 public class JokenpoAI { 
-    public static int  x = randomNum(0, 2);
+    public static int x;
     public static String[] escolhas = new String[2];
     public static String escolha;
     public static void main(String[] args) {
@@ -18,6 +18,7 @@ public class JokenpoAI {
         return randomNumber;
     }
     public static void choose() {
+        x = randomNum(0, 2);
         switch(x) {
             case 0:
                escolha = "Pedra" ;
